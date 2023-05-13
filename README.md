@@ -9,6 +9,9 @@
     
     square(start, end): Dibuja un cuadrado desde el punto de inicio (start) hasta el punto final (end).
     
+La función drawcircle se encarga de distinguir el radio del circulo y así poder hacer el circulo en base
+al tamaño de su radio que se designa en la hoja para dibujar.
+    
     drawcircle(start, end): Dibuja un círculo desde el punto de inicio (start) hasta el punto final (end).
     
     rectangle(start, end): Dibuja un rectángulo desde el punto de inicio (start) hasta el punto final (end).
