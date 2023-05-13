@@ -1,7 +1,13 @@
+## El código comienza importando la biblioteca Turtle 
+## y la función vector de la biblioteca Freegames que nos permite
+## dibujar en nuestro programa.
+
 from turtle import *
 
 from freegames import vector
 import math
+
+## Definimos la función para hacer una línea
 
 def line(start, end):
     """Draw line from start to end."""
@@ -10,7 +16,8 @@ def line(start, end):
     down()
     goto(end.x, end.y)
 
-
+## Definimos la función para hacer un cuadrado
+    
 def square(start, end):
     """Draw square from start to end."""
     up()
@@ -24,6 +31,7 @@ def square(start, end):
 
     end_fill()
 
+## Definimos la función para hacer un círculo    
 
 def drawcircle(start, end):
     """Draw circle from start to end."""
@@ -40,7 +48,7 @@ def rectangle(start, end):
 def triangle(start, end):
     """Draw triangle from start to end."""
 
-
+##La función tap() se utiliza para almacenar el punto de inicio o dibujar la forma.
 def tap(x, y):
     """Store starting point or draw shape."""
     start = state['start']
@@ -64,6 +72,10 @@ setup(420, 420, 370, 0)
 onscreenclick(tap)
 listen()
 onkey(undo, 'u')
+
+## Definimos la función de cada tecla para seleccionar
+## en nuestro programa
+
 onkey(lambda: color('black'), 'K')
 onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
